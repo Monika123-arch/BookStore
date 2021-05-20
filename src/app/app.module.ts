@@ -10,11 +10,14 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppRoutingModule } from './app-routing.module';
+import { AdminloginComponent } from './component/adminlogin/adminlogin.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    AdminloginComponent,
    
   ],
   imports: [
@@ -26,7 +29,8 @@ import { AppRoutingModule } from './app-routing.module';
     MatButtonModule,
     MatCardModule,
     MatToolbarModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
