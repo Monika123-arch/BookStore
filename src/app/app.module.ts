@@ -12,6 +12,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppRoutingModule } from './app-routing.module';
 import { AdminloginComponent } from './component/adminlogin/adminlogin.component';
 import {MatIconModule} from '@angular/material/icon';
+import { FormsModule,ReactiveFormsModule} from '@angular/forms'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,10 @@ import {MatIconModule} from '@angular/material/icon';
     MatCardModule,
     MatToolbarModule,
     AppRoutingModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
