@@ -1,6 +1,7 @@
 .toolbar{
-    width: 1400px;
-    height: 700px;
+    width: 1299px;
+    height: 600px;
+   
 }
 
 .header{
@@ -8,6 +9,7 @@
     font: normal normal medium 15px/20px Lato;
     background: #A03037 0% 0% no-repeat padding-box;
     color: #FFFFFF;
+    width: 1349px;
 }
 
 img{
@@ -24,7 +26,7 @@ input{
 
 .maincontaintentItem{
       background:white;
-      margin-right:120px;
+      margin-right:30px;
       margin-left:170px;
       width: 1000px;
 
@@ -99,7 +101,7 @@ button{
     margin-left: 170px;
     font-weight: bold;
     font-size: large;
-    margin-right: 120px;
+    margin-right: 30px;
     width: 1000px;
     height: 50px;
 
@@ -116,4 +118,15 @@ button{
     font: normal normal medium 12px/15px Lato;
     color: #FFFFFF;
     text-align: left;
+    height: 20px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow: hidden;
+    /* position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center; */
 }
