@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./adminlogin.component.css']
 })
 export class AdminloginComponent implements OnInit {
+  
 
   constructor() { }
 
