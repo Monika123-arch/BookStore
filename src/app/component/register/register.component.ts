@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder,FormGroup,Validators} from '@angular/forms'
+import { AdminService } from 'src/app/service/admin/admin.service';
 
 @Component({
   selector: 'app-register',
@@ -8,7 +9,7 @@ import {FormBuilder,FormGroup,Validators} from '@angular/forms'
 })
 export class RegisterComponent implements OnInit {
   form: FormGroup;
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder, private adminservice :AdminService) {
     this.form = this.formBuilder.group({
       bookname: ['', [Validators.required]],
       Authername: ['',[Validators.required]],
@@ -27,17 +28,28 @@ export class RegisterComponent implements OnInit {
     if (this.form.valid) {
 
       console.log(this.form.value);
+    }
       let reqObj = {
-        bookname : this.form.value.bookname,
-        Authername : this.form.value. Authername,
-        Discription : this.form.value. Discription,
-        Quantity: this.form.value. Discription,
-        Price: this.form.value.Price,
-        DiscountPrice:this.form.value.DiscountPrice
-
+        bookName : this.form.value.bookname,
+        author: this.form.value. Authername,
+        description : this.form.value. Discription,
+        quantity: this.form.value.Quantity,
+        price: this.form.value.Price,
+        discountPrice:this.form.value.DiscountPrice
 
       }
+      console.log(reqObj);
+     this.adminservice.addbook(reqObj).subscribe((res) =>{
+       console.log(res);
+       
+     },(error) =>  {
+       console.log(error);
+     } )
+
+    
     }
 
-  }
+  
+  
 }
+
