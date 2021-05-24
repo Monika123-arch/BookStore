@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import{AdminService} from '../../service/admin/admin.service'
+import { RegisterComponent } from '../register/register.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +10,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private matdialog: MatDialog,private adminservice:AdminService) { }
+  bookArray = [] as any;
 
-  ngOnInit(): void {
+  
+ openDialog() {
+   this.matdialog.open(RegisterComponent);
+ }
+ displaybook(){
+   let list =[] as any;
+  this.adminservice.displaybook().subscribe((res) =>{
+    console.log(res);
+    list = res;
+    this.bookArray = list.result;
+    console.log(this.bookArray);
+    
+  },(error) =>  {
+    console.log(error);
+  } )
+ 
   }
+
+ ngOnInit(): void {
+this.displaybook();
+
+
+}
 
 }
