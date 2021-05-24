@@ -1,0 +1,142 @@
+/* .toolbar{
+    width: 1299x;
+    height: 600px;
+   
+} */
+
+.header{
+    padding: 10px;
+    font: normal normal medium 15px/20px Lato;
+    background: #A03037 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    width: 1349px;
+}
+
+img{
+    top: 18px;  
+    width: 25px;
+    height: 15px;
+    opacity: 1;
+}
+
+input{
+    width: 500px;
+    height: 25px;
+}
+
+.maincontaintentItem{
+      background:white;
+      margin-right:30px;
+      margin-left:170px;
+      width: 1000px;
+      /* background-color: chartreuse; */
+
+} 
+.img1{
+    width: 109px;
+    height: 125px;
+    padding: 10px;
+}   
+
+.card{
+    height: 275px;
+    width: 235px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    margin-bottom: 40px;
+    
+} 
+
+.card1{
+    width: 235px;
+    height: 150px; 
+    border: 1px solid #E2E2E2;    
+    border-radius: 3px;
+    background: #F5F5F5 0% 0% no-repeat padding-box; 
+
+}
+.data1{
+    margin-left: 15px;
+    font: normal normal normal 14px/19px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+    
+}
+.data2{
+    margin-left: 15px;
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+}
+.data3{
+    margin-left: 15px;
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+    text-decoration: line-through;
+}
+button{
+    margin-left: 15px;
+    margin-top: 5px;
+    background: #A03037 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    font-weight: normal;
+    display: inline-block;
+    height: 30px;
+    border: none;
+}
+.button1{
+    background: #FFFFFF;
+    width: 300px;
+    border: 1px solid #E2E2E2; 
+    color: #0A0102;   
+}
+.button2{
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2; 
+    color: #0A0102;
+    /* margin-left: 300px; */
+    /* margin-left: 300px; */
+
+}
+.side{
+    margin-left: 170px;
+    font-weight: bold;
+    font-size: large;
+    margin-right: 30px;
+    width: 1000px;
+    height: 50px;
+    /* background-color: blue; */
+
+}
+.item{
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+}
+.footercontainer {
+    background: rgb(34, 36, 34);
+    padding: 25px;
+    font: normal normal medium 12px/15px Lato;
+    color: #FFFFFF;
+    text-align: left;
+    height: 20px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow: hidden;
+    /* position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center; */
+}
+.centerbutton{
+    margin-left: 35px;
+    margin-right: 35px;
+}
