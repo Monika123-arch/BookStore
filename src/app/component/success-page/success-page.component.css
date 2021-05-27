@@ -1,0 +1,48 @@
+.successImageDiv{
+    width: 40%;
+    height: 35%;
+}
+td{
+   text-size-adjust: 20%;
+    border: 1px solid black;
+  /* border-collapse: collapse; */
+  height: 10%;
+  width: 21%;
+
+}
+th{
+    height: 10%;
+    width: 30%;
+
+}
+table{
+    border-collapse: collapse;
+}
+
+.main-div{
+    width: device-width;
+    
+}
+.table{
+    background: white;
+    border: 1px solid black;
+}
+.table{
+    font-size: 100%;
+    text-align: center;
+    margin-top: 4%;
+     /* border-left: black; */
+     /* background: black; */
+    
+}
+
+.new{
+    margin-top: 2%;
+    margin-bottom: 5%;
+} 
+.main{
+    width: 100%;
+}
+button{
+    bottom: top 0.5px;
+}
