@@ -1,0 +1,122 @@
+.header{
+background: #FFFFFF 0% 0% no-repeat padding-box;
+/* box-shadow: 0px 5px 15px #00000029; */
+border: 1px solid #E4E4E4;
+/* border-radius: 6px;
+opacity: 1; */
+position: absolute;
+  top: 50%;
+  left: 60%;
+ transform: translate(-50%,-50%);
+width: 360px;
+height: 380px; 
+
+}
+.image{
+background:#F5F5F5;
+box-shadow: 0px 5px 15px #00000029;
+border: 1px solid #E4E4E4;
+border-radius: 6px;
+opacity: 1;
+
+/* // position: absolute;
+//   top: 20%;
+//   left: 30%; */
+ 
+width: 300px;
+height: 330px;
+margin-left: 345px;
+padding-top: 15px;
+margin-top: 150px;
+
+
+
+}
+input{
+   width: 200px;
+    height: 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #A03037;
+    border-radius: 2px;
+    opacity: 1;
+    /* // margin-left: 10px; */
+    padding: 10px;
+    margin-right: 30px;
+    border-color: black;
+    padding-top: 10px;
+    
+  }
+  
+  .input1{
+    margin-left: 0px;
+    width: 246px;
+    border-color: black;
+    height: 20%;
+    
+  }
+  .login{
+    margin-right: 35px;
+    height: 10px;
+    margin-top: 10%;
+  }
+  
+  /* .mat{
+    margin-right: 90px;
+    margin-left: 0px;
+    width: 5px;
+  
+  
+  } */
+.email{
+    margin-left: 0px;
+}
+.head{
+    text-align: left;
+font: normal normal medium 25px/33px Roboto;
+letter-spacing: 0px;
+color: #0A0102;
+text-transform: uppercase;
+opacity: 1;
+width: 72px;
+height: 33px;
+margin-left: 140px;
+margin-top: 50px;
+
+}
+.group{
+    margin-left: 50px;
+    width: 120px;
+
+}
+.loginbutton{
+    background: #A03037 0% 0% no-repeat padding-box;
+border-radius: 3px;
+opacity: 1;
+width: 220px;
+height: 37px;
+/* margin-top: 25%; */
+}
+.cartimage{
+    top: 237px;
+left: 373px;
+width: 230px;
+height: 230px;
+top: 237px;
+left: 373px;
+width: 245px;
+height: 245px;
+background: transparent  0% 0% no-repeat padding-box;
+opacity: 1;
+margin-left: 20px;
+margin-top: 15px;
+}
+.label{
+    margin-left: 40px;
+    border: 0px;
+    color: black;
+    font-weight: 1000;
+    font-size: 15px;
+}
+.password{
+  margin-top: 20px;
+}
