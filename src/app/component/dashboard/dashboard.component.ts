@@ -30,6 +30,16 @@ export class DashboardComponent implements OnInit {
   } )
  
   }
+  deleteBook(book){
+    console.log(book);
+    let id = book._id;
+    this.adminservice.deletebook(id).subscribe((res)=>{
+      console.log(res);
+      this.displaybook();
+    },(error)=> {
+      console.log(error)
+    })
+  }
 
  ngOnInit(): void {
 this.displaybook();
