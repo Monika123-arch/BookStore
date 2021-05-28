@@ -4,21 +4,26 @@
         <div class="box" fxLayoutAlign="start center">
             My card(2)
         </div>
-        <div fxLayout="row wrap">
+        <div fxLayout="row wrap" *ngFor="let cart of cartarray">
         <div class="book">
             <img class="image" src="../../../assets/bookimg/book1.png">
         </div>
         <div class="data" fxLayout="column wrap">
-        <h5 class="start"> Dont Me Make Think</h5>
-        <h5 class="middle"> by steve krug </h5>
-        <h5 class="start"> Rs.1500</h5>
+        <h5 class="start">{{cart.product_id.bookName}}</h5>
+        <h5 class="middle">{{cart.product_id.author}}</h5>
+        <h5 class="start">{{cart.product_id.price}}</h5>
         </div>
         </div>
         <div class="button" fxLayout="row wrap" fxLayoutAlign="end end">
-            <button mat-raised-button color="primary">PLACE ORDER</button>
+            <button mat-raised-button color="primary" (click)="display()">PLACE ORDER</button>
         </div>
     </div>
-    <div class="place">
+    <div *ngIf='show == 1' class="undisplayed" fxLayoutAlign="start center">
+        <span class="detaillabel" fxFlexOffset="5">
+            Customer Details
+        </span>
+    </div>
+    <div class="place" *ngIf='show == 2'>
         <div class="box" fxLayoutAlign="start center">
             Customer Details
         </div>
@@ -61,10 +66,15 @@
             </div>
         </div>
         <div class="button" fxLayout="row wrap" fxLayoutAlign="end end">
-            <button mat-raised-button color="primary"> CONTINUE </button>
+            <button mat-raised-button color="primary" (click)="displaynext()"> CONTINUE </button>
         </div>
     </div>
-    <div class="place">
+    <div *ngIf='show2 == 1' class="summary" fxLayoutAlign="start center">
+        <span class="detaillabel" fxFlexOffset="5">
+            Order Summary
+        </span>
+    </div>
+    <div class="place" *ngIf='show1 == 2'>
         <div class="box" fxLayoutAlign="start center">
             Order Summery
         </div>
@@ -78,8 +88,9 @@
         <h5 class="start"> Rs.1500</h5>
         </div>
         </div>
+
         <div class="placebutton" fxLayout="row wrap" fxLayoutAlign="end end">
-            <button mat-raised-button color="primary"> CHECKOUT </button>
+            <button mat-raised-button color="primary"  routerLink="/success-page"> CHECKOUT </button>
         </div>
     </div>
    
