@@ -28,4 +28,7 @@ export class AdminService {
 
     return this.httpService.get('get/book',this.options);
 }
+  deletebook(id :any){
+  return this.httpService.delete('admin/delete/book/'+id,this.options);
+}
 }
