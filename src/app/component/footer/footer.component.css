@@ -4,15 +4,7 @@
     font: normal normal medium 12px/15px Lato;
     color: #FFFFFF;
     text-align: left;
-    height: 20px;
     width: 100%;
-    overflow-x: hidden;
-    overflow: hidden;
-    /* position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center; */
+    height: 10%;
+   
 }
