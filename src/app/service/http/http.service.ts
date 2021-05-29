@@ -11,9 +11,16 @@ export class HttpService {
   constructor( private http: HttpClient ) {
 
    }
-   post(url:any,data:any){
+   post(url:any,data:any,token:any){
     
-    return this.http.post(this.baseurl+url,data);
-    
+    return this.http.post(this.baseurl+url,data,token);
+     
    }
+   get(url:any,token:any){
+   return this.http.get(this.baseurl+url,token);
+}
+delete(url:any,token:any){
+    
+  return this.http.delete(this.baseurl+url,token); 
+}
 }

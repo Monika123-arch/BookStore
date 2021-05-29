@@ -10,16 +10,33 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppRoutingModule } from './app-routing.module';
-import { AdminloginComponent } from './component/adminlogin/adminlogin.component';
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule,ReactiveFormsModule} from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './component/header/header.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { RegisterComponent } from './component/register/register.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DashboarduserComponent } from './component/dashboarduser/dashboarduser.component';
+import { SuccessPageComponent } from './component/success-page/success-page.component';
+import { LoginuserComponent } from './component/loginuser/loginuser.component';
+import {MatSelectModule} from '@angular/material/select';
+import { UserorderComponent } from './component/userorder/userorder.component';
+import {MatRadioModule} from '@angular/material/radio'
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    AdminloginComponent,
+    HeaderComponent,
+    FooterComponent,
+    DashboardComponent,
+    RegisterComponent,
+    DashboarduserComponent,
+    SuccessPageComponent,
+    LoginuserComponent,
+    UserorderComponent,
    
   ],
   imports: [
@@ -35,7 +52,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    MatSelectModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

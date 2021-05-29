@@ -33,11 +33,11 @@ export class LoginuserComponent implements OnInit {
         email : this.form.value.email,
         password : this.form.value.password
       }
-      // let array=[] as any;
+      let array=[] as any;
       this.userservice.login(reqObj).subscribe((res)=>{
         console.log(res)
-        // array=res;
-        // localStorage.setItem('access',array.result.accessToken)
+        array=res;
+        localStorage.setItem('access',array.result.accessToken)
 
         this.route.navigate(['/dashboarduser'])
       },(error)=>{

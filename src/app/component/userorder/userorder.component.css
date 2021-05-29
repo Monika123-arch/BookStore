@@ -57,3 +57,28 @@
     margin-bottom: 2%;
     margin-right: 2%;
 }
+.undisplayed{
+    top: 378px;
+    left: 177px;
+    width: 70%;
+    height: 60px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #DCDCDC;
+    border-radius: 1px;
+    opacity: 1;
+    margin-left: 13%;
+}
+
+.summary{
+    top: 378px;
+    left: 177px;
+    width: 70%;
+    height: 60px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #DCDCDC;
+    border-radius: 1px;
+    opacity: 1;
+    margin-left: 13%;
+    margin-top: 20px;
+    margin-bottom: 10.3%;
+}
